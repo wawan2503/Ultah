@@ -26,13 +26,13 @@
   <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
   <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
 
-  <audio id="birthday-audio" loop preload="none">
-    <source src="./assets/audio/song.mp3" type="audio/mpeg">
+  <audio id="birthday-audio" autoplay loop preload="auto">
+    <source src="./assets/audio/Good_Morning_to_All(chosic.com).mp3" type="audio/mpeg">
   </audio>
 
   <button class="sound-toggle" id="sound-toggle" type="button">
     <span id="sound-icon">M</span>
-    <span id="sound-label">Nyalakan Musik</span>
+    <span id="sound-label">Memuat Musik</span>
   </button>
 
   <main class="page">
@@ -50,6 +50,9 @@
         </p>
 
         <button class="gift-box" id="gift-box" type="button" aria-label="Buka kado">
+          <span class="gift-bow bow-left"></span>
+          <span class="gift-bow bow-right"></span>
+          <span class="gift-knot"></span>
           <span class="gift-lid"></span>
           <span class="gift-ribbon ribbon-h"></span>
           <span class="gift-body"></span>
@@ -101,9 +104,13 @@
       <div class="card video-card">
         <p class="eyebrow">Momen Video</p>
         <div class="video-shell">
+          <div class="story-progress" id="story-progress" aria-hidden="true"></div>
+          <div class="story-head">
+            <div class="story-badge">Annida Cian</div>
+            <div class="story-counter" id="video-counter">1 / 1</div>
+          </div>
           <video
             id="birthday-video"
-            controls
             playsinline
             preload="metadata"
             poster="./assets/photos/photo-2.jpg"
@@ -111,14 +118,16 @@
             <source src="./assets/videos/birthday-video.mp4" type="video/mp4">
             Browser kamu belum mendukung video HTML5.
           </video>
+          <button class="story-nav story-nav-left" id="video-prev" type="button" aria-label="Video sebelumnya"></button>
+          <button class="story-nav story-nav-right" id="video-next" type="button" aria-label="Video berikutnya"></button>
+          <div class="story-overlay-copy">
+            <strong id="video-title">Satu video buat hari yang spesial</strong>
+            <span id="video-message"></span>
+          </div>
           <div class="video-fallback" id="video-fallback">
             Tambahkan video di
             <code>assets/videos/birthday-video.mp4</code>
           </div>
-        </div>
-        <div class="video-copy">
-          <h2 id="video-title">Satu video buat hari yang spesial</h2>
-          <p id="video-message"></p>
         </div>
         <div class="action-row">
           <button class="secondary-btn" type="button" data-next="2">Kembali</button>
@@ -132,7 +141,7 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">Galeri Kenangan</p>
-            <h2>Foto-foto yang bikin halaman ini terasa hidup</h2>
+            <h2>Foto-foto favorit buat hidup aku sempurna dengan orang yang sempurna</h2>
           </div>
           <button class="primary-btn" type="button" data-next="5">Lanjut Penutup</button>
         </div>

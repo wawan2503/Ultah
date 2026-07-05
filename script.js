@@ -1,12 +1,66 @@
 const siteConfig = {
-  celebrantName: "Meilani",
+  celebrantName: "Annida Cian",
   senderName: "Orang Spesial",
+  spotlightPhotoSrc: "./assets/photos/WhatsApp Image 2026-07-05 at 20.00.55.jpeg",
+  videoItems: [
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.00.58 (1).mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.00.56.jpeg",
+      label: "Video 1"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.00.58.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.10 (1).jpeg",
+      label: "Video 2"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.09 (1).mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.10.jpeg",
+      label: "Video 3"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.09.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.11.jpeg",
+      label: "Video 4"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.10.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.12.jpeg",
+      label: "Video 5"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.11 (1).mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.13 (1).jpeg",
+      label: "Video 6"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.11 (2).mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.13.jpeg",
+      label: "Video 7"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.11.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.14 (1).jpeg",
+      label: "Video 8"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.12.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.14.jpeg",
+      label: "Video 9"
+    },
+    {
+      src: "./assets/videos/WhatsApp Video 2026-07-05 at 20.01.13.mp4",
+      poster: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.15.jpeg",
+      label: "Video 10"
+    }
+  ],
+  audioSrc: "./assets/audio/Good_Morning_to_All(chosic.com).mp3",
   heroMessage:
     "Semoga tahun ini datang dengan lebih banyak tawa, hati yang tenang, rezeki yang baik, dan orang-orang yang tulus di sekeliling kamu. Web ini sengaja dibuat beralur, biar rasanya kayak buka hadiah pelan-pelan.",
   spotlightNote: "yang nyiapin halaman kecil ini buat bikin hari kamu terasa lebih spesial.",
   videoTitle: "Video singkat buat nemenin hari ulang tahunmu",
   videoMessage:
-    "Kalau videonya belum muncul, cukup taruh file MP4 kamu di folder assets/videos. Setelah itu Vercel bakal langsung serve file-nya seperti halaman biasa.",
+    "Ingat momen momen kita setiap harinya. aku kangen sama kamu setiap hari, mungkin kalau kita jumpa dari bayi aku kangen kamu selama 20 tahun ini. Always be with me ya ciann Love you !!",
   closingMessage:
     "Semoga semua doa baik yang diam-diam kamu simpan bisa ketemu jalannya satu per satu. Tetap sehat, tetap lucu, dan tetap jadi versi diri kamu yang paling hangat. Selamat ulang tahun.",
   whatsappNumber: "6281234567890",
@@ -17,17 +71,20 @@ const siteConfig = {
   ],
   tickerText: "Happy Birthday",
   photoItems: [
-    { src: "./assets/photos/photo-1.jpg", caption: "Foto Utama" },
-    { src: "./assets/photos/photo-2.jpg", caption: "Senyum Manis" },
-    { src: "./assets/photos/photo-3.jpg", caption: "Momen Favorit" },
-    { src: "./assets/photos/photo-4.jpg", caption: "Aura Spesial" },
-    { src: "./assets/photos/photo-5.jpg", caption: "Hari Bahagia" },
-    { src: "./assets/photos/photo-6.jpg", caption: "Penutup Galeri" }
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.00.55.jpeg", caption: "Foto Utama" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.00.56.jpeg", caption: "Senyum Manis" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.10 (1).jpeg", caption: "Momen Favorit" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.10.jpeg", caption: "Aura Spesial" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.11.jpeg", caption: "Hari Bahagia" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.12.jpeg", caption: "Penutup Galeri" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.13 (1).jpeg", caption: "Manis Banget" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.13.jpeg", caption: "Favorit Lagi" },
+    { src: "./assets/photos/WhatsApp Image 2026-07-05 at 20.01.14 (1).jpeg", caption: "Senyum Lagi" }
   ],
   messageCards: [
-    "Semoga hari-hari kamu tahun ini lebih ringan, lebih penuh kabar baik, dan lebih banyak alasan buat tersenyum.",
-    "Semoga semua target yang lagi kamu kejar pelan-pelan datang ke tangan yang tepat, di waktu yang tepat.",
-    "Semoga kamu selalu dikelilingi orang yang jujur, tulus, dan benar-benar pengin lihat kamu bahagia."
+    "aku tahu sadar aku belum jadi yang sempurna buat kamu tapi aku harap kamu paham aku ingin menjadi yang terbaik buat kamu",
+    "Princess seperti kamu layak dirayakan setiap harinya, maaf ya aku belum bisa menjadi sosok yang selama ini kamu harapkan",
+    "I will try my best for you ciannn makasi selalu cantik setiap hari. terima kasih ibu cian uda mencetak bidadari semanis kamu selama 20 tahun"
   ]
 };
 
@@ -39,7 +96,7 @@ const steps = [
   { id: 5, label: "Penutup" }
 ];
 
-const confettiColors = ["#ff6b57", "#ffb347", "#4ecdc4", "#ffd166", "#f78fb3", "#ffffff"];
+const confettiColors = ["#8fd6a3", "#bfe9ae", "#6fc5a0", "#e7f8dd", "#9ed8b2", "#ffffff"];
 const sparkleSymbols = ["*", "+", ".", "o", "*"];
 
 const progressNav = document.getElementById("progress-nav");
@@ -60,6 +117,10 @@ const soundLabel = document.getElementById("sound-label");
 const soundIcon = document.getElementById("sound-icon");
 const birthdayAudio = document.getElementById("birthday-audio");
 const spotlightPhoto = document.getElementById("spotlight-photo");
+const videoPrevButton = document.getElementById("video-prev");
+const videoNextButton = document.getElementById("video-next");
+const videoCounter = document.getElementById("video-counter");
+const storyProgress = document.getElementById("story-progress");
 const candleButton = document.getElementById("candle-button");
 const candleFlame = document.getElementById("candle-flame");
 const cakeNote = document.getElementById("cake-note");
@@ -68,13 +129,16 @@ const burstButton = document.getElementById("burst-button");
 
 let currentStep = 1;
 let isMusicPlaying = false;
+let autoPlayAttempted = false;
+let currentVideoIndex = 0;
+let musicPausedForVideo = false;
 
 function applyContent() {
   document.title = `Selamat Ulang Tahun ${siteConfig.celebrantName}`;
   document.getElementById("hero-name-step1").textContent = siteConfig.celebrantName;
   document.getElementById("hero-name-step2").textContent = siteConfig.celebrantName;
   document.getElementById("step1-copy").textContent =
-    `Hari ini ada web kecil yang isinya doa, foto, video, dan sedikit keributan lucu buat ${siteConfig.celebrantName}.`;
+    `Hari ini ada web kecil yang isinya doa, foto, video, dan sedikit keributan lucu buat ${siteConfig.celebrantName}. Mwah Semoga bahagia walau ga seberapa dari aku ini ya ciannn akuuhh`;
   document.getElementById("hero-message").textContent = siteConfig.heroMessage;
   document.getElementById("from-name").textContent = siteConfig.senderName;
   document.getElementById("spotlight-note").textContent = siteConfig.spotlightNote;
@@ -82,6 +146,8 @@ function applyContent() {
   document.getElementById("video-message").textContent = siteConfig.videoMessage;
   document.getElementById("closing-message").textContent = siteConfig.closingMessage;
   document.getElementById("wa-link").href = `https://wa.me/${siteConfig.whatsappNumber}`;
+  spotlightPhoto.src = siteConfig.spotlightPhotoSrc;
+  birthdayAudio.src = siteConfig.audioSrc;
 }
 
 function renderTicker() {
@@ -202,6 +268,9 @@ function goToStep(stepId) {
     videoElement.play().catch(() => {});
   } else {
     videoElement.pause();
+    if (musicPausedForVideo) {
+      birthdayAudio.play().catch(() => {});
+    }
   }
 }
 
@@ -230,6 +299,70 @@ function handleVideoFallback() {
   }
 }
 
+function renderStoryProgress() {
+  const totalVideos = siteConfig.videoItems.length;
+  storyProgress.innerHTML = siteConfig.videoItems
+    .map((_, index) => {
+      const state =
+        index < currentVideoIndex ? "done" : index === currentVideoIndex ? "active" : "";
+      return `<span class="story-progress-item ${state}"><span></span></span>`;
+    })
+    .join("");
+}
+
+function renderVideoSlide(index) {
+  const totalVideos = siteConfig.videoItems.length;
+  const safeIndex = (index + totalVideos) % totalVideos;
+  const currentVideo = siteConfig.videoItems[safeIndex];
+  const videoSource = videoElement.querySelector("source");
+
+  currentVideoIndex = safeIndex;
+  videoShell.classList.remove("missing");
+  videoFallback.hidden = true;
+  videoElement.pause();
+
+  if (videoSource) {
+    videoSource.src = currentVideo.src;
+  }
+
+  videoElement.poster = currentVideo.poster;
+  videoElement.load();
+
+  videoCounter.textContent = `${safeIndex + 1} / ${totalVideos}`;
+  document.getElementById("video-title").textContent = currentVideo.label;
+  document.getElementById("video-message").textContent = siteConfig.videoMessage;
+  renderStoryProgress();
+
+  if (currentStep === 3) {
+    videoElement.play().catch(() => {});
+  }
+}
+
+function moveVideoSlide(direction) {
+  renderVideoSlide(currentVideoIndex + direction);
+}
+
+function pauseMusicForVideo() {
+  if (!birthdayAudio) {
+    return;
+  }
+
+  if (!birthdayAudio.paused) {
+    musicPausedForVideo = true;
+    birthdayAudio.pause();
+  }
+}
+
+function resumeMusicAfterVideo() {
+  if (!birthdayAudio || currentStep !== 3) {
+    return;
+  }
+
+  if (musicPausedForVideo) {
+    birthdayAudio.play().catch(() => {});
+  }
+}
+
 async function toggleMusic() {
   if (!birthdayAudio) {
     soundLabel.textContent = "Audio Tidak Ada";
@@ -251,6 +384,25 @@ async function toggleMusic() {
     soundLabel.textContent = "Pause Musik";
   } catch (error) {
     soundLabel.textContent = "Klik Lagi";
+  }
+}
+
+async function tryAutoPlayMusic() {
+  if (!birthdayAudio || autoPlayAttempted || !birthdayAudio.src) {
+    return;
+  }
+
+  autoPlayAttempted = true;
+
+  try {
+    birthdayAudio.volume = 1;
+    await birthdayAudio.play();
+    isMusicPlaying = true;
+    soundIcon.textContent = "II";
+    soundLabel.textContent = "Pause Musik";
+  } catch (error) {
+    soundIcon.textContent = "M";
+    soundLabel.textContent = "Tap Buat Musik";
   }
 }
 
@@ -290,6 +442,9 @@ function bindEvents() {
   });
 
   giftBox.addEventListener("click", () => {
+    if (!isMusicPlaying) {
+      birthdayAudio.play().catch(() => {});
+    }
     giftBox.classList.add("open");
     addConfettiBurst(70);
     window.setTimeout(() => {
@@ -298,6 +453,8 @@ function bindEvents() {
   });
 
   soundToggle.addEventListener("click", toggleMusic);
+  videoPrevButton.addEventListener("click", () => moveVideoSlide(-1));
+  videoNextButton.addEventListener("click", () => moveVideoSlide(1));
   lightboxClose.addEventListener("click", closeLightbox);
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
@@ -310,6 +467,47 @@ function bindEvents() {
   birthdayAudio.addEventListener("error", () => {
     soundLabel.textContent = "Audio Belum Ada";
   });
+
+  birthdayAudio.addEventListener("play", () => {
+    isMusicPlaying = true;
+    soundIcon.textContent = "II";
+    soundLabel.textContent = "Pause Musik";
+  });
+
+  birthdayAudio.addEventListener("pause", () => {
+    isMusicPlaying = false;
+    soundIcon.textContent = "M";
+    soundLabel.textContent = "Nyalakan Musik";
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    tryAutoPlayMusic();
+  }, { once: true });
+
+  window.addEventListener("load", () => {
+    tryAutoPlayMusic();
+  }, { once: true });
+
+  document.addEventListener("pointerdown", () => {
+    if (!isMusicPlaying) {
+      birthdayAudio.play().catch(() => {});
+    }
+  }, { once: true });
+
+  videoElement.addEventListener("ended", () => {
+    resumeMusicAfterVideo();
+    moveVideoSlide(1);
+  });
+
+  videoElement.addEventListener("play", () => {
+    pauseMusicForVideo();
+  });
+
+  videoElement.addEventListener("pause", () => {
+    if (!videoElement.ended) {
+      resumeMusicAfterVideo();
+    }
+  });
 }
 
 applyContent();
@@ -318,8 +516,10 @@ renderProgress();
 renderChips();
 renderGallery();
 renderMessages();
+renderVideoSlide(0);
 fillSparkles();
 handleSpotlightFallback();
 handleVideoFallback();
 bindEvents();
 addConfettiBurst(42);
+tryAutoPlayMusic();

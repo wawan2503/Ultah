@@ -1,6 +1,6 @@
 # Web Ultah Static
 
-Project ini dibuat supaya alurnya tetap mirip `MEILANI.html`, tetapi lebih rapi untuk diedit dan langsung di-deploy ke Vercel.
+Project ini dibuat supaya alurnya tetap mirip `ANNIDA-CIAN.html`, tetapi lebih rapi untuk diedit dan langsung di-deploy ke Vercel.
 
 ## Struktur
 
@@ -29,7 +29,7 @@ Project ini dibuat supaya alurnya tetap mirip `MEILANI.html`, tetapi lebih rapi 
 3. Taruh video di:
    - `assets/videos/birthday-video.mp4`
 4. Kalau mau musik latar, taruh file MP3 di:
-   - `assets/audio/song.mp3`
+   - `assets/audio/Good_Morning_to_All(chosic.com).mp3`
 
 ## Deploy ke Vercel
 
