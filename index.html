@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Ulang Tahun</title>
+  <meta
+    name="description"
+    content="Web ulang tahun interaktif dengan alur buka kado, ucapan, video, galeri foto, dan penutup."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track"></div>
+  </div>
+
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+  <audio id="birthday-audio" loop preload="none">
+    <source src="./assets/audio/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="sound-toggle" id="sound-toggle" type="button">
+    <span id="sound-icon">M</span>
+    <span id="sound-label">Nyalakan Musik</span>
+  </button>
+
+  <main class="page">
+    <nav class="progress" id="progress-nav" aria-label="Progress halaman"></nav>
+
+    <section class="step active" id="step-1">
+      <div class="card gift-card">
+        <p class="eyebrow">Pembuka Paling Penting</p>
+        <h1 class="headline">
+          Selamat Ulang Tahun,
+          <span id="hero-name-step1">Nama Kamu</span>
+        </h1>
+        <p class="lead" id="step1-copy">
+          Hari ini ada web kecil yang isinya doa, foto, video, dan sedikit keributan lucu buat kamu.
+        </p>
+
+        <button class="gift-box" id="gift-box" type="button" aria-label="Buka kado">
+          <span class="gift-lid"></span>
+          <span class="gift-ribbon ribbon-h"></span>
+          <span class="gift-body"></span>
+          <span class="gift-ribbon ribbon-v"></span>
+        </button>
+
+        <p class="hint">Ketuk kadonya buat buka halaman kejutan</p>
+      </div>
+    </section>
+
+    <section class="step" id="step-2">
+      <div class="hero-grid">
+        <div class="card hero-card">
+          <p class="eyebrow">Ucapan Utama</p>
+          <h2 class="hero-title">
+            Hari ini panggungnya milik
+            <span id="hero-name-step2">Nama Kamu</span>
+          </h2>
+          <p class="lead" id="hero-message"></p>
+
+          <div class="chip-row" id="event-chips"></div>
+
+          <div class="action-row">
+            <button class="primary-btn" type="button" data-next="3">Lihat Video</button>
+          </div>
+        </div>
+
+        <div class="card spotlight-card">
+          <div class="spotlight-frame">
+            <img
+              id="spotlight-photo"
+              src="./assets/photos/photo-1.jpg"
+              alt="Foto utama ulang tahun"
+            >
+            <div class="spotlight-fallback">
+              Tambahkan foto utama di
+              <code>assets/photos/photo-1.jpg</code>
+            </div>
+          </div>
+          <div class="spotlight-note">
+            <strong id="from-name">Dari seseorang</strong>
+            <span id="spotlight-note"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" id="step-3">
+      <div class="card video-card">
+        <p class="eyebrow">Momen Video</p>
+        <div class="video-shell">
+          <video
+            id="birthday-video"
+            controls
+            playsinline
+            preload="metadata"
+            poster="./assets/photos/photo-2.jpg"
+          >
+            <source src="./assets/videos/birthday-video.mp4" type="video/mp4">
+            Browser kamu belum mendukung video HTML5.
+          </video>
+          <div class="video-fallback" id="video-fallback">
+            Tambahkan video di
+            <code>assets/videos/birthday-video.mp4</code>
+          </div>
+        </div>
+        <div class="video-copy">
+          <h2 id="video-title">Satu video buat hari yang spesial</h2>
+          <p id="video-message"></p>
+        </div>
+        <div class="action-row">
+          <button class="secondary-btn" type="button" data-next="2">Kembali</button>
+          <button class="primary-btn" type="button" data-next="4">Lanjut Foto</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" id="step-4">
+      <div class="card gallery-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Galeri Kenangan</p>
+            <h2>Foto-foto yang bikin halaman ini terasa hidup</h2>
+          </div>
+          <button class="primary-btn" type="button" data-next="5">Lanjut Penutup</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid"></div>
+
+        <div class="message-stack" id="message-stack"></div>
+      </div>
+    </section>
+
+    <section class="step" id="step-5">
+      <div class="card finale-card">
+        <p class="eyebrow">Penutup</p>
+        <h2 class="finale-title">Sekarang waktunya tiup lilin digital</h2>
+
+        <div class="cake-wrap">
+          <button class="candle-button" id="candle-button" type="button" aria-label="Tiup lilin">
+            <span class="flame" id="candle-flame"></span>
+            <span class="candle-stick"></span>
+          </button>
+          <div class="cake">
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-base"></div>
+          </div>
+        </div>
+
+        <p class="finale-note" id="cake-note">
+          Klik api lilinnya. Setelah itu tombol penutup akan muncul.
+        </p>
+
+        <div class="closing-letter">
+          <p id="closing-message"></p>
+        </div>
+
+        <div class="closing-actions hidden" id="closing-actions">
+          <button class="primary-btn" id="burst-button" type="button">Rayakan Lagi</button>
+          <a class="wa-btn" id="wa-link" href="#" target="_blank" rel="noreferrer">Balas ke WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Tutup foto">x</button>
+    <img id="lightbox-image" alt="Preview foto kenangan">
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+</html>
